@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This website expresses Real Madrid history and all players that played in Real Madrid">
+    <meta name="keywords" content="Real Madrid">
+    <meta name="author" content="Hamza Ali">
+</head>
+<body>
+<header>
+    <h1>Real Madrid CF</h1>
+    <img src="Real Madrid Logo.png" alt="Real Madrid Logo" width="80">
+    <nav>
+        <a href="#history">History</a>
+        <a href="#trophies">Trophies</a>
+        <a href="#stadium">Stadium</a> 
+        <a href="#legends">Legends</a>
+        <a href="#players">Players</a>
+    </nav>
+</header>
+
+<section id="history">
+    <h2>History</h2>
+    <p>Real Madrid Club de Fútbol is arguably the most successful and celebrated club in football history, defined by its relentless pursuit of trophies and global stardom. Founded in 1902 as Madrid Foot-Ball Club, it was granted its royal title ("Real") by King Alfonso XIII in 1920, establishing an enduring identity of football royalty wrapped in its iconic all-white kit. The club’s legendary status was permanently secured in the 1950s under President Santiago Bernabéu, who signed world-class icons like Alfredo Di Stéfano to win the first five consecutive European Cups. This blueprint of assembling international superstars laid the foundation for the modern Galácticos eras, which saw icons from Zinedine Zidane to Cristiano Ronaldo shatter records on the pitch. Recognized by FIFA as the Club of the Century, Real Madrid's historic legacy is anchored by an unmatched trophy cabinet—including a record 15 UEFA Champions League titles and 36 La Liga championships making the club a permanent empire of world football.</p>
+</section>
+
+<section id="trophies">
+    <h2>Trophies</h2>
+    <div class="trophy-container">
+        <div class="trophy-card" onclick="showTrophy('Champions League')" style="cursor:pointer;">
+            <img class="trophy-img" src="trophies/15 champions league.jpg" alt="Champions League">
+            <h3>15 UEFA Champions League titles</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('FIFA ClubWorld Cup')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/5 FIFA Club World Cup.jpg" alt="FIFA Club World cup">
+            <h3>5 FIFA Club World Cup titles</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('La Liga')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/36 La Liga titles.jpg" alt="La Liga">
+            <h3>36 La Liga titles</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('Copa del Rey')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/copa del Rey.jpg" alt="Copa del Rey">
+            <h3>20 Copa del Rey title</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('Supercopa de España')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/Supercopa de España.jpg" alt="Supercopa de España">
+            <h3>13 Supercopa de España</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('Intercontinental Cup')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/3 Intercontinental Cup.jpg" alt="Intercontinental Cup">
+            <h3>4 Intercontinental Cup</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('UEFA Europa League')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/Europa League.jpg" alt="UEFA League">
+            <h3>2 UEFA Europa League</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('Latin Cup')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/Latin Cup.jpg" alt="Latin Cup">
+            <h3>2 Latin Cup</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('Ibero-American Cup')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/Ibero-American Cup.jpg" alt="Ibero-American Cup">
+            <h3>1 Ibero-American Cup</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('Copa Eva Duarte')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/Copa Eva Duarte.jpg" alt="Copa Eva Duarte">
+            <h3>1 Copa Eva Duarte</h3>
+        </div>
+        <div class="trophy-card" onclick="showTrophy('Campeonato Regional Centro')" style="cursor:pointer">
+            <img class="trophy-img" src="trophies/Campeonato Regional Centro.jpg" alt="Campeonato Regional Centro">
+            <h3>23 Campeonato Regional Centro</h3>
+        </div>
+    </div>
+</section>
+
+<section id="stadium">
+    <h2>Stadium</h2>
+    <div class="stadium-center-wrapper">
+        <div class="stadium-card" id="stadiumCardInfo" style="cursor: pointer;">
+            <div class="gallery-container">
+                <div class="slider" id="stadium-slider">
+                    <img src="Stadium/Exterior 1.jpg" alt="Stadium Exterior1" class="slide active">
+                    <img src="Stadium/Exterior 2.jpg" alt="Stadium Exterior2" class="slide">
+                    <img src="Stadium/Entrance.jpg" alt="Stadium Entrance" class="slide">
+                    <img src="Stadium/Food corner.jpg" alt="Stadium Food Corner" class="slide">
+                    <img src="Stadium/museum 1.jpg" alt="Stadium Museum 1" class="slide">
+                    <img src="Stadium/museum 2.jpg" alt="Stadium Museum 2" class="slide">
+                    <img src="Stadium/Room.jpg" alt="Players Room" class="slide">
+                    <img src="Stadium/Players Entrance.jpg" alt="Players Entrance Gate" class="slide">
+                    <img src="Stadium/interior 1.jpg" alt="Stadium Interior1" class="slide">
+                    <img src="Stadium/subs.jpg" alt="Sub" class="slide">
+                    <img src="Stadium/underground.jpg" alt="Stadium underground" class="slide">
+                </div>
+                <button class="nav-btn prev" id="prev-btn">&#10094;</button>
+                <button class="nav-btn next" id="next-btn">&#10095;</button>
+                <div class="dots-container" id="dots-container"></div>
+            </div>
+            <div class="stadium-details">
+                <h2 class="stadium-name">Santiago Bernabéu</h2>
+                <p class="stadium-location">Madrid, Spain</p>
+                <p class="stadium-description">
+                   The Santiago Bernabéu Stadium is the legendary home of Real Madrid and one of the most famous landmarks in world football. Originally opened in 1947 and named after the club's visionary former player and president, the historic stadium is located in the heart of Madrid, Spain. Following a massive, state-of-the-art renovation completed recently, the Bernabéu has transformed into a futuristic, hyper-modern arena with a seating capacity of approximately 85,000. It features a striking wraparound steel facade, a fully retractable roof that can open or close in just 15 minutes, and a pioneering underground greenhouse system that can store and preserve the entire pitch vertically below ground. More than just a football pitch, this multi-purpose engineering marvel is designed to host major international concerts, conventions, and other sporting events year-round, securing its place as a majestic monument to the club's ongoing global empire.
+                </p>
+                <div class="stadium-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">85,000+</span>
+                        <span class="stat-label">Capacity</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">1947</span>
+                        <span class="stat-label">Opened</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-panel-overlay" id="stadiumPanelOverlay">
+        <div class="info-panel">
+            <div class="panel-header">
+                <h2>Santiago Bernabéu Details</h2>
+                <button class="close-panel-btn" id="closePanelBtn">&times;</button>
+            </div>
+            <div class="panel-content">
+                <h3>The modern Transformation</h3>
+                <p>The massive modern transformation of the santiago Bernabéu has completely altered its presence, turning the historic 1947 stadium into a futuristic monument in the heart of Madrid. The exterior evolved from a traditional, open concrete arena into an avant-grade architectural marvel wrapped in a striking, flowing steel facade. This new outer skin completely redefines its aesthetic, reflecting light to give the structure a dynamic and hyper-modern look. Along with this dramatic visual overhaul, the stadium's internal capacity was optimized to accommodate approximately 85,000 spectators. The surrounding concourses and facilites were completely modernized to transition the iconic venue into a hyper-functional, multi-purpose arena capable of hosting massive international concerts, global conventions, and diverse entertainment events year-round.</p>
+                <video class="panel-media" controls>
+                    <source src="Stadium/video.mp4" type="video/mp4">
+                </video>
+                <hr class="panel-divider">
+                <h3>Retractable Roof & Scoreboard</h3>
+                <p>The modern transformation of the Santiago Bernabéu features a striking, fully retractable roof that can open or close in just 15 minutes, allowing the stadium to adapt to any weather conditions. This architectural marvel is complemented by a high-tech 360-degree video scoreboard, which wraps around the interior to provide fans with an immersive visual experience from every seat in the arena. These upgrades, along with the futuristic steel facade, have turned the legendary home of Real Madrid into one of the most advanced multi-purpose venues in the world.</p>
+                <video class="panel-media" controls>
+                    <source src="Stadium/video2.mp4" type="video/mp4">
+                </video>
+                <hr class="panel-media" controls>
+                <h3>The secret Underground Greenhouse</h3>
+                <img src="Stadium/underground.jpg" alt="underground" class="panel-media">
+                <p>The most revolutionary aspect of the Santiago Bernabéu's engineering is its pioneering underground greenhouse system. This state-of-the-art mechanism allows the entire grass pitch to be retracted vertically and stored in a deep subterranean vault below ground level.<br>Once tucked away in this "secret" underground chamber, the pitch is meticulously preserved using advanced climate control technology, including LED lighting and irrigation systems, to ensure the turf remains in perfect condition while the stadium floor above is used for other activities. This massive engineering feat effectively secures the stadium's place as a majestic monument to the club's ongoing global empire.</p>
+                <video class="panel-media" controls>
+                    <source src="Stadium/video3.mp4" type="video/mp4">
+                </video>
+                <hr class="panel-divider">
+                <h3>Inside the Real Madrid Experience</h3>
+                <p>Step past the moder, glowing steel facade of the Santiago Bernabéu and into an elite destination tailored for fans, travelers, and football enthusiasts alike. The fully transformed stadium has evolved into a premier architectural attraction, offering a multi-layerd journey right through the heart of the world's most successful football club.
+                <p>As you walk through the newly expanded and modernized internal concourses, you are surrounded by a high-tech design that balances the stadium's historic 1947 roots with a striking futuristic aesthetic. Massive open-air walkways lead you to stunning vantage points where you can look out across the city of Madrid, completely bridging the gap between urban life and the roaring passion inside the arena.
+                <p>No experience is complete without entering the legendary trophy room. Here, visitors come face-to-face with an unmatched collection of silverware—including a record 15 UEFA Champions League titles and 36 La Liga cups. This zone has been upgraded into a fully digital experience, allowing you to use interactive displays to browse through historical match footage, rewatch iconic goals from club legends, and explore the evolution of Real Madrid's famous all-white kit from 1902 to the modern day.
+                    <img src="Stadium/museum 1.jpg" alt="Museum" class="panel-media">
+                    <img src="Stadium/museum 2.jpg" alt="Museum" class="panel-media">
+                    <img src="Stadium/First kit.jpg" alt="Museum" class="panel-media">
+                <p>The modern Bernabéu is engineeered to be a living, breathing venue operating 24/7, 365 days a year. Walking through the structure, you can see how the layout transitions seamlessly to support life outside of matchdays. The stadium features specialized premium hosptitality zones, world-class convention areas, and a massive food corner designed to treat visitors to a diverse range of culinary experiences right next to the pitch.
+                    <img src="Stadium/Food corner.jpg" alt="Food corner" class="panel-media">
+                <p>Whether you are standing in the upper tiers looking down at the massive 85,000-capacity bowl or exploring the historical exhibits, the new design delievers a majestic, fully immersive monument dedicated entirely to the ongoing global empire of Real Madrid.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="managers">
+    <h2>Real Madrid Managers</h2>
+    <div class="filter-controls">
+        <div class="filter-group">
+            <label>Filter by Country:</label>
+            <div class="custom-dropdown" id="customManagerCountryDropdown">
+                <div class="dropdown-selected" id="managerDropdownSelected">All Nationalities</div>
+                <div class="dropdown-options" id="managerDropdownOptions">
+                    <div class="dropdown-item" data-value="All">All Nationalities</div>
+                    <div class="dropdown-item active" data-value="All">All countries</div>
+                    <div class="dropdown-item" data-value="Argentina"><img src="https://flagcdn.com/16x12/ar.png">Argentina</div>
+                    <div class="dropdown-item" data-value="France"><img src="https://flagcdn.com/16x12/fr.png">France</div>
+                    <div class="dropdown-item" data-value="Germany"><img src="https://flagcdn.com/16x12/de.png">Germany</div>
+                    <div class="dropdown-item" data-value="Italy"><img src="https://flagcdn.com/16x12/it.png">Italy</div>
+                    <div class="dropdown-item" data-value="Spain"><img src="https://flagcdn.com/16x12/es.png">Spain</div>
+                </div>
+            </div>
+            <input type="hidden" id="managerCountryFilter" value="All">
+        </div>
+
+        <div class="filter-group">
+            <label for="managerSortFilter">Sort By Era:</label>
+            <select id="managerSortFilter">
+                <option value="Default">Oldest Managers First</option>
+                <option value="Latest">Latest Managers</option>
+            </select>
+        </div>
+        <input type="text" id="managerSearchInput" placeholder="Search manager...">
+    </div>
+    <div id="managersContainer"></div>
+</section>
+
+<section id="legends">
+    <h2>Legends</h2>
+    <p>Cristiano Ronaldo, Alfredo Di Stefano, Raul, Iker Casillas, Sergio Ramos, Zinedine Zidane.</p>
+</section>
+
+<section id="players">
+    <h2>Player Database</h2>
+    <div class="filter-controls">
+        <div class="filter-group">
+        <label for="positionFilter">Select Position:</label>
+        <select id="positionFilter">
+            <option value="All">All players</option>
+            <option value="Forward">Forwards</option>
+            <option value="Midfielder">Midfielders</option>
+            <option value="Defender">Defenders</option>
+            <option value="Goalkeeper">Goalkeepers</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label>Select Country:</label>
+        <div class="custom-dropdown" id="customCountryDropdown">
+            <div class="dropdown-selected" id="dropdownSelected">
+                <span>All countries</span>
+            </div>
+            <div class="dropdown-options" id="dropdownOptions">
+                <div class="dropdown-item active" data-value="All">All countries</div>
+                <div class="dropdown-item" data-value="Argentina"><img src="https://flagcdn.com/16x12/ar.png">Argentina</div>
+                <div class="dropdown-item" data-value="Austria"><img src="https://flagcdn.com/16x12/at.png">Austria</div>
+                <div class="dropdown-item" data-value="Belgium"><img src="https://flagcdn.com/16x12/be.png">Belgium</div>
+                <div class="dropdown-item" data-value="Brazil"><img src="https://flagcdn.com/16x12/br.png">Brazil</div>
+                <div class="dropdown-item" data-value="Cameroon"><img src="https://flagcdn.com/16x12/cm.png">Cameroon</div>
+                <div class="dropdown-item" data-value="Chile"><img src="https://flagcdn.com/16x12/cl.png">Chile</div>
+                <div class="dropdown-item" data-value="Colombia"><img src="https://flagcdn.com/16x12/co.png">Colombia</div>
+                <div class="dropdown-item" data-value="Costa Rica"><img src="https://flagcdn.com/16x12/cr.png">Costa Rica</div>
+                <div class="dropdown-item" data-value="Croatia"><img src="https://flagcdn.com/16x12/hr.png">Croatia</div>
+                <div class="dropdown-item" data-value="Cuba"><img src="https://flagcdn.com/16x12/cu.png">Cuba</div>
+                <div class="dropdown-item" data-value="Denmark"><img src="https://flagcdn.com/16x12/dk.png">Denmark</div>
+                <div class="dropdown-item" data-value="England"><img src="Flags/England.png">England</div>
+                <div class="dropdown-item" data-value="France"><img src="https://flagcdn.com/16x12/fr.png">France</div>
+                <div class="dropdown-item" data-value="Germany"><img src="https://flagcdn.com/16x12/de.png">Germany</div>
+                <div class="dropdown-item" data-value="Guatemala"><img src="https://flagcdn.com/16x12/gt.png">Guatemala</div>
+                <div class="dropdown-item" data-value="Hungary"><img src="https://flagcdn.com/16x12/hu.png">Hungary</div>
+                <div class="dropdown-item" data-value="Italy"><img src="https://flagcdn.com/16x12/it.png">Italy</div>
+                <div class="dropdown-item" data-value="Mali"><img src="https://flagcdn.com/16x12/ml.png">Mali</div>
+                <div class="dropdown-item" data-value="Mexico"><img src="https://flagcdn.com/16x12/mx.png">Mexico</div>
+                <div class="dropdown-item" data-value="Morocco"><img src="https://flagcdn.com/16x12/ma.png">Morocco</div>
+                <div class="dropdown-item" data-value="Netherlands"><img src="https://flagcdn.com/16x12/nl.png">Netherlands</div>
+                <div class="dropdown-item" data-value="Portugal"><img src="https://flagcdn.com/16x12/pt.png">Portugal</div>
+                <div class="dropdown-item" data-value="Romania"><img src="https://flagcdn.com/16x12/ro.png">Romania</div>
+                <div class="dropdown-item" data-value="Serbia"><img src="https://flagcdn.com/16x12/rs.png">Serbia</div>
+                <div class="dropdown-item" data-value="Slovakia"><img src="https://flagcdn.com/16x12/sk.png">Slovakia</div>
+                <div class="dropdown-item" data-value="Spain"><img src="Flags/Spain.png">Spain</div>
+                <div class="dropdown-item" data-value="Türkiye"><img src="https://flagcdn.com/16x12/tr.png">Türkiye</div>
+                <div class="dropdown-item" data-value="Ukraine"><img src="https://flagcdn.com/16x12/ua.png">Ukraine</div>
+                <div class="dropdown-item" data-value="Uruguay"><img src="https://flagcdn.com/16x12/uy.png">Uruguay</div>
+                <div class="dropdown-item" data-value="Wales"><img src="Flags/Wales.jpg">Wales</div>
+                <div class="dropdown-item" data-value="Yugoslavia"><img src="Flags/Yugoslavia.png">Yugoslavia</div>
+            </div>
+        </div>
+        <input type="hidden" id="countryFilter" value="All">
+    </div>
+    <div class="filter-group">
+        <label for="sortFilter">Sort By Era:</label>
+        <select id="sortFilter">
+            <option value="Default">Oldest Players First</option>
+            <option value="Latest">Latest Players</option>
+        </select>
+    </div>
+    <input type="text" id="searchInput" placeholder="Search player...">
+    </div>
+    <div id="playersContainer"></div>
+</section>
+
+<div id="playerModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closePlayer()">&times;</span>
+        <img id="modalImage" src="" alt="">
+        <h2 id="modalName"></h2>
+        <p id="modalPosition"></p>
+        <p id="modalCountry"></p>
+        <p id="modalDuration"></p>
+        <p id="modalTrophies"></p>
+    </div>
+</div>
+
+<div id="trophyModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeTrophy()">&times;</span>
+        <img id="trophyModalImage" src="" alt="">
+        <h2 id="trophyModalName"></h2>
+        <p id="trophyModalDescription"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
